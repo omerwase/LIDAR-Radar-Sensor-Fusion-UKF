@@ -57,7 +57,8 @@ The table below shows RMSE values on Dataset 1 in the simulator. The first three
 | py  | 0.0984     | 0.2038     | 0.0836     | 0.0857    |
 | vx  | 0.5121     | 0.3079     | 0.2846     | 0.4167    |
 | vy  | 0.2370     | 0.2460     | 0.1915     | 0.4228    |
-
+  
+  
 The image below is a screenshot from the simulator using the Unscented Kalman Filter from this project.
 ![alt text][image1]
 
