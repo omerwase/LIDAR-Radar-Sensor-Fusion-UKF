@@ -49,6 +49,8 @@ $ ./ExtendedKF
 
 ### Results
 
+The table below shows RMSE values on Dataset 1 in the simulator. The first three columns show values obtained using the Unscented Kalman Filter for their respective sensors (combined uses both lidar and radar). The last column contains RMSE values from the Extended Kalman Filter build in the previous project.
+
 |     | Laser Only | Radar Only | Combined   | EKF       |
 |:---:|:----------:|:----------:|:----------:|:---------:|
 | px  | 0.1026     | 0.1509     | 0.0670     | 0.0950    |
@@ -56,5 +58,9 @@ $ ./ExtendedKF
 | vx  | 0.5121     | 0.3079     | 0.2846     | 0.4167    |
 | vy  | 0.2370     | 0.2460     | 0.1915     | 0.4228    |
 
-
+The image below is a screenshot from the simulator using the Unscented Kalman Filter from this project.
 ![alt text][image1]
+
+### Discussion
+
+
