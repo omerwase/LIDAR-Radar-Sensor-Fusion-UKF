@@ -64,12 +64,12 @@ The image below is a screenshot from the simulator using the Unscented Kalman Fi
 
 ### Discussion
 
-From the table above we can see that the Unscented Kalman Filter (UKF) provides improved estimates when compared with the Extended Kalman Filter on the same dataset. The is mainly due to the CTRV motion model used in the Unscented Kalman Filter, which is better able to model acceleration (change in direction). The CTRV motion model contains non-linear equations which the UKF can accomodate. Comparatively the EKF used the Taylor series to create linear equations that approximated non-linear motion.
+From the table above we can see that the Unscented Kalman Filter (UKF) provides improved estimates when compared with the Extended Kalman Filter on the same dataset. This is mainly due to the CTRV motion model used in the Unscented Kalman Filter, which is better able to model acceleration (change in direction). The CTRV motion model contains non-linear equations which the UKF can accomodate. Comparatively the EKF used the Taylor series to create linear equations that approximated non-linear motion.
 
 Furthermore the table shows that using both lidar and radar sensors improves accuracy over using just one sensor. Therefore the UKF is an effective method for sensor fusion. 
 
 #### Filter Consistency
-The process noise paramters were tuned based on the Normalize Innovation Squared (NIS) values produced by the filter. The two graphs below show the NIS values from the final filter implementaiton (for laser and radar respectively). The 95% line indicates that only 5% of data points should be above this line for a consistent estimate. For the radar NIS graph, approximately 4.4% of values are above the line, which is close to expected. However for the laser graph only about 2% of data points are above the line. 
+The process noise paramters were tuned based on the Normalize Innovation Squared (NIS) values produced by the filter. The two graphs below show the NIS values from the final filter implementaiton (for laser and radar respectively). The 95% line indicates that only 5% of data points should be above this line for a consistent estimate. For the radar NIS graph approximately 4.4% of values are above the line, which is close to expected. However for the laser graph only about 2% of data points are above the line, which indicates that the filter is over estimating the process uncertainty. This is something that can be tuned further in the future implementations. For the time being the filter provides RMSE values well below project specifications.
 
 ![alt text][image3]
 ![alt text][image4]
