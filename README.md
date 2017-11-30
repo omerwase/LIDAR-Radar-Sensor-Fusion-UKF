@@ -1,5 +1,11 @@
 # SDC P7: Unscented Kalman Filter
 
+[//]: # (Image References)
+
+[image1]: ./images/dataset1.jpeg "Dataset 1"
+[image2]: ./images/dataset2.jpeg "Dataset 2"
+[image3]: ./images/laser_nis.jpeg "Laser NIS"
+[image4]: ./images/radar_nis.jpeg "Radar NIS"
 
 ### Description:
 This program implements an Unscented Kalman Filter, with sensor fusion, that uses lidar and radar data to track a moving object. CTRV is used to model object motion with the following state parameters: px, py, v, yaw, and yaw rate. The program works in conjuction with [Udacity's SDC term 2 simulator](https://github.com/udacity/self-driving-car-sim/releases). The simulator provides the program with simulated lidar and radar data. Using this data the program estimates the state of the object being tracked. The estimated state is compared with ground truth values to calculate the root mean squared error (RMSE).
@@ -43,4 +49,9 @@ $ ./ExtendedKF
 
 ### Results
 
-
+|    | Laser Only | Radar Only | Combined | EKF     |
+|:--:|:----------:|:----------:|:--------:|:-------:|
+| px |            |            | 0.0670   |         |
+| py |            |            | 0.0836   |         |
+| vx |            |            | 0.2846   |         |
+| vy |            |            | 0.1915   |         |
