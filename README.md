@@ -41,7 +41,7 @@ $ make
 ```
 7. Run ExtendedKF
 ```shell
-$ ./ExtendedKF  
+$ ./UnscentedKF  
 ```
 8. Launch Udacity's SDC simulator and start project 2 simulation.
 
